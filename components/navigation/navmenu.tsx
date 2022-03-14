@@ -1,4 +1,4 @@
-import { Box, Button, Flex, HStack, Stack } from "@chakra-ui/react";
+import { Box, Flex, Stack } from "@chakra-ui/react";
 import React from "react";
 
 import Logo from "./logo";
@@ -41,6 +41,7 @@ const NavBarContainer: React.FC<NavBarProps> = ({ children, props }) => (
 		justify="space-between"
 		wrap="wrap"
 		w="100%"
+		h="7vh"
 		bg="background"
 		p={2}
 		pr={5}

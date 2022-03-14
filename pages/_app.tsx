@@ -1,11 +1,13 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import NavBar from "@components/navigation/navmenu";
-import Colors from "@themes/colors";
+import Theme from "@themes/theme";
+import "@fontsource/roboto";
+import "@styles/document.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<ChakraProvider theme={Colors}>
+		<ChakraProvider theme={Theme}>
 			<NavBar />
 			<Component {...pageProps} />
 		</ChakraProvider>
