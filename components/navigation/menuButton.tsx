@@ -1,5 +1,5 @@
-import React from "react";
 import { Box } from "@chakra-ui/react";
+import React from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 
 type Props = {

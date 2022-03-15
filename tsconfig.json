@@ -31,6 +31,12 @@
 			],
 			"@themes/*": [
 				"themes/*"
+			],
+			"@util/*": [
+				"util/*"
+			],
+			"@constants/*": [
+				"constants/*"
 			]
 		},
 		"jsxImportSource": "@emotion/react"

@@ -1,7 +1,6 @@
-import React from "react";
 import { Text, TextProps } from "@chakra-ui/react";
 import Link from "next/link";
-import { css } from "@emotion/react";
+import React from "react";
 
 type Props = {
 	isLast?: boolean;

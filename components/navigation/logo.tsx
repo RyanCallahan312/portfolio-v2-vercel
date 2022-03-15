@@ -1,6 +1,6 @@
-import React from "react";
 import { Box, BoxProps, Image } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 
 const Logo: React.FC<BoxProps> = (props) => {
 	return (

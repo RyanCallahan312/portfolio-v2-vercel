@@ -1,22 +1,43 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import ThreeImage from "./image";
 import { Heading } from "@chakra-ui/react";
-import { Html, useProgress } from "@react-three/drei";
+import { CAROSEL_IMAGES } from "@constants/constants";
 import { css } from "@emotion/react";
+import { Html, useProgress } from "@react-three/drei";
+import { Canvas, useThree } from "@react-three/fiber";
+import { getOffset } from "@util/trig";
+import React, { Suspense } from "react";
+import ThreeImage from "./image";
+
+const CanvasComponents: React.FC = ({ children }) => {
+	useThree(({ camera }) => {
+		camera.rotation.set(-0.7, 0, 0);
+		camera.position.set(0, 3, 5);
+	});
+	return <>{children}</>;
+};
 
 const Carosel: React.FC = () => {
+	const images = CAROSEL_IMAGES.map((image, index) => (
+		<ThreeImage
+			key={image + index}
+			imagePath={image}
+			offset={getOffset(index, CAROSEL_IMAGES.length)}
+			size={[2, 2]}
+		/>
+	));
 	return (
 		<Canvas>
-			<Suspense fallback={<Fallback />}>
-				<ThreeImage />
-			</Suspense>
+			<CanvasComponents>
+				<Suspense fallback={<Fallback />}>
+					<pointLight args={[`white`, 1, 100]} position={[0, 3, 5]} />
+					{images}
+				</Suspense>
+			</CanvasComponents>
 		</Canvas>
 	);
 };
 
 const Fallback: React.FC = () => {
-	const { active, progress, errors, item, loaded, total } = useProgress();
+	const { progress } = useProgress();
 	return (
 		<Html center>
 			<Heading

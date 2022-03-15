@@ -1,6 +1,5 @@
 import { Box, Flex, Stack } from "@chakra-ui/react";
 import React from "react";
-
 import Logo from "./logo";
 import MenuButton from "./menuButton";
 import MenuItem from "./menuItem";
