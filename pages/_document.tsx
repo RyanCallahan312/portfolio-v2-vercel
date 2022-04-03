@@ -8,6 +8,8 @@ export default function Document() {
 			<body
 				css={css`
 				overflow-y: scroll;
+				height: 100vh;
+				background-color: #252834;
 			`}>
 				<Main />
 				<NextScript />

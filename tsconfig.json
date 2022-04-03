@@ -37,6 +37,12 @@
 			],
 			"@constants/*": [
 				"constants/*"
+			],
+			"@hooks/*": [
+				"hooks/*"
+			],
+			"@context/*": [
+				"context/*"
 			]
 		},
 		"jsxImportSource": "@emotion/react"

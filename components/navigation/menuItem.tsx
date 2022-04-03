@@ -17,7 +17,11 @@ const MenuItem: React.FC<Props> = ({
 	return (
 		<Link href={to}>
 			<a>
-				<Text display="block" fontSize="x-large" px={8} {...rest}>
+				<Text
+					display="block"
+					fontSize="x-large"
+					px={"calc(2vw - 2px)"}
+					{...rest}>
 					{children}
 				</Text>
 			</a>

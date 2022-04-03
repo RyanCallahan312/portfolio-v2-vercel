@@ -1,10 +1,4 @@
-import {
-	Center,
-	Grid,
-	GridItem,
-	Heading,
-	useMediaQuery
-} from "@chakra-ui/react";
+import { Center, Grid, GridItem, Heading } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
@@ -12,8 +6,6 @@ import dynamic from "next/dynamic";
 const Carosel = dynamic(() => import("@components/3dCarosel/carosel"));
 
 const Home: NextPage = () => {
-	const isSmallScreen = useMediaQuery("(min-width: 1280)");
-
 	return (
 		<main
 			css={css`
@@ -32,7 +24,7 @@ const Home: NextPage = () => {
 							color="white"
 							fontSize="4xl"
 							css={css`font-variant: small-caps; letter-spacing: 2px;`}>
-							a full stack web developer
+							a full stack developer
 						</Heading>
 					</Center>
 					<Center my="5px">

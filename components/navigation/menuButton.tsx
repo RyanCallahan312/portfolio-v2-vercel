@@ -10,7 +10,7 @@ type Props = {
 const MenuButton: React.FC<Props> = ({ onToggle, isOpen }) => {
 	return (
 		<Box display={{ base: "block", sm: "none" }} onClick={onToggle}>
-			{isOpen ? <MdClose /> : <MdMenu />}
+			{isOpen ? <MdClose size={30} /> : <MdMenu size={30} />}
 		</Box>
 	);
 };
