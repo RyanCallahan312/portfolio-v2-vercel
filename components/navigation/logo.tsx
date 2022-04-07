@@ -1,4 +1,5 @@
-import { Box, BoxProps, Image } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,7 +11,8 @@ const Logo: React.FC<BoxProps> = (props) => {
 					<Image
 						src="/DevRyanLogo.svg"
 						alt="Dev Ryan Svg"
-						htmlWidth="70px"
+						width="70px"
+						height="54px"
 						loading="eager"
 					/>
 				</a>

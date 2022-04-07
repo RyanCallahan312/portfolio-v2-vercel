@@ -1,6 +1,7 @@
-import { Flex, Heading, Image, Stack } from "@chakra-ui/react";
+import { Flex, Heading, Stack } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import type { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 const Contact: NextPage = () => {
@@ -18,7 +19,10 @@ const Contact: NextPage = () => {
 				<Image
 					src="/avatar.png"
 					alt="Dev Ryan Avatar"
+					layout="intrinsic"
 					loading="eager"
+					width="400px"
+					height="400px"
 				/>
 				<Heading as="h1" color="white" fontSize="4xl" mb="20px">
 					Say Hello 🙌
@@ -35,7 +39,9 @@ const Contact: NextPage = () => {
 								src="/github-mark-white.svg"
 								alt="Github Logo"
 								loading="eager"
+								layout="fixed"
 								width="100px"
+								height="100px"
 							/>
 						</a>
 					</Link>
@@ -45,7 +51,9 @@ const Contact: NextPage = () => {
 								src="/gmail.svg"
 								alt="Gmail Logo"
 								loading="eager"
+								layout="fixed"
 								width="100px"
+								height="100px"
 							/>
 						</a>
 					</Link>
@@ -55,7 +63,9 @@ const Contact: NextPage = () => {
 								src="/linkedin.png"
 								alt="Linkedin Logo"
 								loading="eager"
+								layout="fixed"
 								width="100px"
+								height="100px"
 							/>
 						</a>
 					</Link>
