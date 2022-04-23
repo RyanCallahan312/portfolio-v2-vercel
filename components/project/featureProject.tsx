@@ -38,7 +38,7 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({
 				direction="column">
 				<Spacer />
 				<Box width="100%" h="50%" pos="relative">
-					<Image src={image} layout="fill" />
+					<Image src={image} layout="fill" alt="Project Tumbnail" />
 				</Box>
 				<Spacer />
 				<HStack width="100%" justify="space-between" align="baseline">

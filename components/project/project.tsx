@@ -30,7 +30,7 @@ const Project: React.FC<ProjectProps> = ({
 				justify="center"
 				direction={reverse ? "row-reverse" : "row"}>
 				<Box width="50%" h="80%" pos="relative">
-					<Image src={image} layout="fill" />
+					<Image src={image} layout="fill" alt="Project Tumbnail" />
 				</Box>
 				<Flex
 					direction="column"
