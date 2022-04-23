@@ -8,12 +8,7 @@ type Props = {
 	textStyles?: TextProps;
 };
 
-const MenuItem: React.FC<Props> = ({
-	children,
-	isLast = false,
-	to = "/",
-	...rest
-}) => {
+const MenuItem: React.FC<Props> = ({ children, to = "/", ...rest }) => {
 	return (
 		<Link href={to}>
 			<a>

@@ -1,6 +1,7 @@
 const Fonts = {
 	fonts: {
-		heading: "Roboto, sans-serif"
+		heading: "Roboto, sans-serif",
+		body: "Nunito Sans, sans-serif"
 	}
 };
 

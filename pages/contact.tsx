@@ -2,7 +2,6 @@ import { Flex, Heading, Stack } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 import type { NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 const Contact: NextPage = () => {
 	return (
@@ -33,42 +32,36 @@ const Contact: NextPage = () => {
 					spacing="10%"
 					align="center"
 					justify="center">
-					<Link href="https://github.com/RyanCallahan312">
-						<a>
-							<Image
-								src="/github-mark-white.svg"
-								alt="Github Logo"
-								loading="eager"
-								layout="fixed"
-								width="100px"
-								height="100px"
-							/>
-						</a>
-					</Link>
-					<Link href="mailto:Ryan@DevRyan.io">
-						<a>
-							<Image
-								src="/gmail.svg"
-								alt="Gmail Logo"
-								loading="eager"
-								layout="fixed"
-								width="100px"
-								height="100px"
-							/>
-						</a>
-					</Link>
-					<Link href="https://www.linkedin.com/in/ryancallahan312/">
-						<a>
-							<Image
-								src="/linkedin.png"
-								alt="Linkedin Logo"
-								loading="eager"
-								layout="fixed"
-								width="100px"
-								height="100px"
-							/>
-						</a>
-					</Link>
+					<a href="https://github.com/RyanCallahan312">
+						<Image
+							src="/github-mark-white.svg"
+							alt="Github Logo"
+							loading="eager"
+							layout="fixed"
+							width="100px"
+							height="100px"
+						/>
+					</a>
+					<a href="mailto:Ryan@DevRyan.io">
+						<Image
+							src="/gmail.svg"
+							alt="Gmail Logo"
+							loading="eager"
+							layout="fixed"
+							width="100px"
+							height="100px"
+						/>
+					</a>
+					<a href="https://www.linkedin.com/in/ryancallahan312/">
+						<Image
+							src="/linkedin.png"
+							alt="Linkedin Logo"
+							loading="eager"
+							layout="fixed"
+							width="100px"
+							height="100px"
+						/>
+					</a>
 				</Stack>
 			</Flex>
 		</main>

@@ -11,6 +11,7 @@
 		"@chakra-ui/react": "^1.8.3",
 		"@emotion/react": "^11.7.1",
 		"@emotion/styled": "^11",
+		"@fontsource/nunito-sans": "^4.5.6",
 		"@fontsource/roboto": "^4.5.3",
 		"@react-three/drei": "^8.16.5",
 		"@react-three/fiber": "^7.0.26",
@@ -19,6 +20,7 @@
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
 		"react-icons": "^4.3.1",
+		"sharp": "^0.30.3",
 		"three": "^0.138.3"
 	},
 	"devDependencies": {

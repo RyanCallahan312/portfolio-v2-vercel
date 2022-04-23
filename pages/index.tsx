@@ -11,7 +11,10 @@ const Home: NextPage = () => {
 			css={css`
 		height: 100%;
 		`}>
-			<Grid gridTemplateRows="min-content auto" h="93vh" bg="background">
+			<Grid
+				gridTemplateRows="min-content auto"
+				h="calc(100vh - 4.3rem)"
+				bg="background">
 				<GridItem>
 					<Center my="2rem">
 						<Heading as="h1" color="white" fontSize="7xl">

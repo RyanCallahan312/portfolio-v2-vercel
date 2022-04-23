@@ -39,11 +39,11 @@ const NavBarContainer: React.FC = ({ children }) => (
 		justify="space-between"
 		wrap="wrap"
 		w="100%"
-		h="4.4rem"
+		h="4.3rem"
 		bg="background"
 		p={2}
 		pr={5}
-		color={["white", "white", "primary.700", "primary.700"]}>
+		color="white">
 		{children}
 	</Flex>
 );
@@ -57,7 +57,7 @@ const MenuLinks: React.FC<MenuLinksProps> = ({ children, isOpen }) => {
 				bg="background"
 				position="absolute"
 				left="0px"
-				top="4.4rem"
+				top="4.3rem"
 				w="100%"
 				height="auto"
 				zIndex={1}
