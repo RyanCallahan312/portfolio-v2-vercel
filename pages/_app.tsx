@@ -7,18 +7,16 @@ import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
-			<ChakraProvider theme={Theme}>
-				<Grid templateRows="4.3rem auto" h="100%">
-					<GridItem>
-						<NavBar />
-					</GridItem>
-					<GridItem>
-						<Component {...pageProps} />
-					</GridItem>
-				</Grid>
-			</ChakraProvider>
-		</>
+		<ChakraProvider theme={Theme}>
+			<Grid templateRows="4.3rem auto" h="100%">
+				<GridItem>
+					<NavBar />
+				</GridItem>
+				<GridItem>
+					<Component {...pageProps} />
+				</GridItem>
+			</Grid>
+		</ChakraProvider>
 	);
 }
 
