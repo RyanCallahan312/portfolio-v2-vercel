@@ -3,7 +3,6 @@ import {
 	Center,
 	Flex,
 	Heading,
-	HStack,
 	Link,
 	Spacer,
 	Text
@@ -32,8 +31,8 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({
 		<Center h="80%" mb="4rem">
 			<Flex
 				h="100%"
-				width={["100%", "80%", "80%", "60%", "60%", "50%"]}
-				align="flex-start"
+				width={["95%", "80%", "80%", "60%", "60%", "50%"]}
+				align={{ base: "center", md: "flex-start" }}
 				justify="center"
 				direction="column">
 				<Spacer />
@@ -49,15 +48,19 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({
 					</Box>
 				</Center>
 				<Spacer />
-				<HStack width="100%" justify="space-between" align="baseline">
-					<Heading color="white" as="h1">
+				<Flex
+					direction={{ base: "column", md: "row" }}
+					width="100%"
+					justify="space-between"
+					align={{ base: "center", md: "baseline" }}>
+					<Heading color="white" as="h1" fontSize={["2xl", "4xl"]}>
 						{title}
 					</Heading>
 					<Text color="white" fontStyle="italic">
 						{techStack?.join(", ")}
 					</Text>
-				</HStack>
-				<Text color="white" py="5px">
+				</Flex>
+				<Text textAlign="justify" color="white" py="5px">
 					{description}
 				</Text>
 

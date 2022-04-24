@@ -28,9 +28,12 @@ const Project: React.FC<ProjectProps> = ({
 				width={["100%", "80%"]}
 				align="center"
 				justify="center"
-				direction={reverse ? "row-reverse" : "row"}
+				direction={{
+					base: "column",
+					md: reverse ? "row-reverse" : "row"
+				}}
 				my="3rem">
-				<Box width="50%">
+				<Box width={{ base: "90%", md: "50%" }}>
 					<Image
 						src={image}
 						layout="responsive"
@@ -41,18 +44,18 @@ const Project: React.FC<ProjectProps> = ({
 				</Box>
 				<Flex
 					direction="column"
-					width="40%"
+					width={{ base: "95%", md: "40%" }}
 					height="50%"
 					mx="3rem"
-					alignItems="start"
+					alignItems={{ base: "center", md: "start" }}
 					justifyContent="center">
-					<Heading color="white" as="h1">
+					<Heading color="white" as="h1" fontSize={["2xl", "4xl"]}>
 						{title}
 					</Heading>
 					<Text color="white" fontStyle="italic">
 						{techStack?.join(", ")}
 					</Text>
-					<Text color="white" py="10px">
+					<Text textAlign="justify" color="white" py="10px">
 						{description}
 					</Text>
 

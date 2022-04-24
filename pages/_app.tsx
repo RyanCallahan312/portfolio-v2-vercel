@@ -9,7 +9,7 @@ function App({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider theme={Theme}>
 			<Grid templateRows="4.3rem auto">
-				<GridItem position="sticky" top="0px" left="0px">
+				<GridItem position="sticky" top="0px" left="0px" zIndex="1">
 					<NavBar />
 				</GridItem>
 				<GridItem minHeight="calc(100vh - 4.3rem)">
