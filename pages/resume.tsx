@@ -6,7 +6,6 @@ const Resume: NextPage = () => {
 	return (
 		<main
 			css={css`
-		flex-grow: 1;
 		height:100%
 		`}>
 			<Center h="100%" pt="8px" bg="background">

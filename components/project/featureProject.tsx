@@ -29,7 +29,7 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({
 	techStack
 }: FeatureProjectProps) => {
 	return (
-		<Center h="85%">
+		<Center h="80%" mb="4rem">
 			<Flex
 				h="100%"
 				width={["100%", "80%", "80%", "60%", "60%", "50%"]}
@@ -37,9 +37,17 @@ const FeatureProject: React.FC<FeatureProjectProps> = ({
 				justify="center"
 				direction="column">
 				<Spacer />
-				<Box width="100%" h="50%" pos="relative">
-					<Image src={image} layout="fill" alt="Project Tumbnail" />
-				</Box>
+				<Center width="100%">
+					<Box width="80%">
+						<Image
+							src={image}
+							layout="responsive"
+							alt="Project Tumbnail"
+							height="1000px"
+							width="1000px"
+						/>
+					</Box>
+				</Center>
 				<Spacer />
 				<HStack width="100%" justify="space-between" align="baseline">
 					<Heading color="white" as="h1">

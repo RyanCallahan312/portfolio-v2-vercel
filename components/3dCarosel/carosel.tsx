@@ -5,7 +5,7 @@ import { Html, useProgress } from "@react-three/drei";
 import { Canvas, useThree } from "@react-three/fiber";
 import { getOffset } from "@util/trig";
 import React, { Suspense } from "react";
-import ThreeImage from "./image";
+import ThreeImage from "./threeImage";
 
 type Children = {
 	children?: React.ReactNode;

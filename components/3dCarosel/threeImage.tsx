@@ -17,7 +17,7 @@ const ThreeImage: React.FC<Props> = ({
 	const texture = useLoader(TextureLoader, imagePath);
 	const [animationState, setAnimationState] = React.useState<number>(0);
 
-	useFrame((_, delta) => {
+	useFrame(() => {
 		setAnimationState(() => animationState + 0.002);
 		mesh.current!.position!.x = Math.cos(animationState + offset) * 3.5;
 		mesh.current!.position!.z = Math.sin(animationState + offset) * 3;

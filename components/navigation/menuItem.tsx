@@ -3,13 +3,12 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {
-	isLast?: boolean;
 	to?: string;
 	textStyles?: TextProps;
 	children: React.ReactNode;
 };
 
-const MenuItem: React.FC<Props> = ({ children, to = "/", isLast, ...rest }) => {
+const MenuItem: React.FC<Props> = ({ children, to = "/", ...rest }) => {
 	return (
 		<Link href={to}>
 			<a>

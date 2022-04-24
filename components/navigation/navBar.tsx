@@ -29,9 +29,7 @@ const NavBar = () => {
 				<MenuItem to="/blog">Blog</MenuItem>
 				<MenuItem to="/resume">Resume</MenuItem>
 				<MenuItem to="/projects">Projects</MenuItem>
-				<MenuItem to="/contact" isLast>
-					Contact
-				</MenuItem>
+				<MenuItem to="/contact">Contact</MenuItem>
 			</MenuLinks>
 		</NavBarContainer>
 	);

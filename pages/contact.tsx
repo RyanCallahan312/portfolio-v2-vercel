@@ -7,7 +7,6 @@ const Contact: NextPage = () => {
 	return (
 		<main
 			css={css`
-		flex-grow: 1;
 		height:100%
 		`}>
 			<Flex

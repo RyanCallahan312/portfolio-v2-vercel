@@ -5,14 +5,14 @@ import "@styles/document.css";
 import Theme from "@themes/theme";
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider theme={Theme}>
-			<Grid templateRows="4.3rem auto" h="100%">
-				<GridItem>
+			<Grid templateRows="4.3rem auto">
+				<GridItem position="sticky" top="0px" left="0px">
 					<NavBar />
 				</GridItem>
-				<GridItem>
+				<GridItem minHeight="calc(100vh - 4.3rem)">
 					<Component {...pageProps} />
 				</GridItem>
 			</Grid>
@@ -20,4 +20,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 	);
 }
 
-export default MyApp;
+export default App;

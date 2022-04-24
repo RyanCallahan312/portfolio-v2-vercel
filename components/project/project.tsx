@@ -22,15 +22,22 @@ const Project: React.FC<ProjectProps> = ({
 	reverse
 }: ProjectProps) => {
 	return (
-		<Center h="60%" my="3rem">
+		<Center h="60%">
 			<Flex
 				h="100%"
 				width={["100%", "80%"]}
 				align="center"
 				justify="center"
-				direction={reverse ? "row-reverse" : "row"}>
-				<Box width="50%" h="80%" pos="relative">
-					<Image src={image} layout="fill" alt="Project Tumbnail" />
+				direction={reverse ? "row-reverse" : "row"}
+				my="3rem">
+				<Box width="50%">
+					<Image
+						src={image}
+						layout="responsive"
+						alt="Project Tumbnail"
+						height="1000px"
+						width="1400px"
+					/>
 				</Box>
 				<Flex
 					direction="column"

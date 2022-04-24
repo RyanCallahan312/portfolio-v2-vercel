@@ -1,15 +1,11 @@
+import { Spacer } from "@chakra-ui/react";
 import FeatureProject from "@components/project/featureProject";
 import Project from "@components/project/project";
-import { css } from "@emotion/react";
 import type { NextPage } from "next";
 
 const Projects: NextPage = () => {
 	return (
-		<main
-			css={css`
-		flex-grow: 1;
-		height:100%
-		`}>
+		<main>
 			<FeatureProject
 				image="/Highlight-inator.svg"
 				title="Highlight-inator"
@@ -25,6 +21,7 @@ const Projects: NextPage = () => {
 				demoLink="http://losing-the-lyrics.devryan.io/"
 				techStack={["React", "Next.js", "Socket.io"]}
 			/>
+			<Spacer />
 			<Project
 				image="/chat-app-proj.png"
 				title="Chat App Demo"
