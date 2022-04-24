@@ -4,7 +4,9 @@ import { Head, Html, Main, NextScript } from "next/document";
 export default function Document() {
 	return (
 		<Html>
-			<Head />
+			<Head>
+				<link rel="shortcut icon" href="/DevRyanLogo.svg" />
+			</Head>
 			<body
 				css={css`
 				overflow-y: scroll;
