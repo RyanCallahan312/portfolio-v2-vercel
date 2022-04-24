@@ -6,6 +6,7 @@ type Props = {
 	isLast?: boolean;
 	to?: string;
 	textStyles?: TextProps;
+	children: React.ReactNode;
 };
 
 const MenuItem: React.FC<Props> = ({ children, to = "/", isLast, ...rest }) => {

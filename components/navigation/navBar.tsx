@@ -6,6 +6,11 @@ import MenuItem from "./menuItem";
 
 type MenuLinksProps = {
 	isOpen: boolean;
+	children?: React.ReactNode;
+};
+
+type Children = {
+	children?: React.ReactNode;
 };
 
 const NavBar = () => {
@@ -32,7 +37,7 @@ const NavBar = () => {
 	);
 };
 
-const NavBarContainer: React.FC = ({ children }) => (
+const NavBarContainer: React.FC<Children> = ({ children }) => (
 	<Flex
 		as="nav"
 		align="center"

@@ -7,7 +7,11 @@ import { getOffset } from "@util/trig";
 import React, { Suspense } from "react";
 import ThreeImage from "./image";
 
-const CanvasComponents: React.FC = ({ children }) => {
+type Children = {
+	children?: React.ReactNode;
+};
+
+const CanvasComponents: React.FC<Children> = ({ children }) => {
 	useThree(({ camera }) => {
 		camera.rotation.set(-0.7, 0, 0);
 		camera.position.set(0, 3, 5);
