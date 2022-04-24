@@ -2379,11 +2379,11 @@ __metadata:
   linkType: hard
 
 "detect-gpu@npm:^4.0.14":
-  version: 4.0.18
-  resolution: "detect-gpu@npm:4.0.18"
+  version: 4.0.19
+  resolution: "detect-gpu@npm:4.0.19"
   dependencies:
     webgl-constants: ^1.1.1
-  checksum: 0c0f86127d3107c0f935f51f17f2a6881c57fd57849054cfe9776f366c925f8dcca6b0689af1001584436288ce4b6d42533098548ee81c69b548ee5504d4ea18
+  checksum: a5f87e91dae26324269cb7159bc09b05aa517e8f8d340297b4bf0ecd8764d15976c62bf511a9e6754fcd5c4f940380d703eaf2d261797d3904669b334bd2c64c
   languageName: node
   linkType: hard
 
