@@ -5,12 +5,18 @@ import React from "react";
 type Props = {
 	to?: string;
 	textStyles?: TextProps;
+	external?: boolean;
 	children: React.ReactNode;
 };
 
-const MenuItem: React.FC<Props> = ({ children, to = "/", ...rest }) => {
+const MenuItem: React.FC<Props> = ({
+	children,
+	to = "/",
+	external = false,
+	...rest
+}) => {
 	return (
-		<Link href={to}>
+		<Link href={to} passHref>
 			<a>
 				<Text
 					display="block"

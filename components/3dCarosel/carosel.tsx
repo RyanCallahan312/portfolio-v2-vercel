@@ -3,6 +3,7 @@ import { CAROSEL_IMAGES } from "@constants/constants";
 import { css } from "@emotion/react";
 import { Html, useProgress } from "@react-three/drei";
 import { Canvas, useThree } from "@react-three/fiber";
+import { shuffle } from "@util/arrayUtil";
 import { getOffset } from "@util/trig";
 import React, { Suspense } from "react";
 import ThreeImage from "./threeImage";
@@ -20,7 +21,7 @@ const CanvasComponents: React.FC<Children> = ({ children }) => {
 };
 
 const Carosel: React.FC = () => {
-	const images = CAROSEL_IMAGES.map((image, index) => (
+	const images = shuffle<string>(CAROSEL_IMAGES).map((image, index) => (
 		<ThreeImage
 			key={image + index}
 			imagePath={image}

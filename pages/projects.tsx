@@ -31,6 +31,15 @@ const Projects: NextPage = () => {
 				techStack={["React", "Next.js", "Socket.io"]}
 				reverse
 			/>
+			<Spacer />
+			<Project
+				image="/react-hangman-optimised.png"
+				title="React Hangman"
+				description="The classic hangman game built with React. Includes two modes. One is the standard game, and the other is a predictive mode where the user gives a word and the game will guess it!"
+				githubLink="https://github.com/RyanCallahan312/React-Hangman"
+				demoLink="https://hangman.devryan.io/"
+				techStack={["React"]}
+			/>
 		</main>
 	);
 };

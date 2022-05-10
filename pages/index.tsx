@@ -17,7 +17,11 @@ const Home: NextPage = () => {
 				bg="background">
 				<GridItem>
 					<Center my="2rem">
-						<Heading as="h1" color="white" fontSize="7xl">
+						<Heading
+							as="h1"
+							color="white"
+							fontSize={{ base: "5xl", md: "7xl" }}
+							textAlign="center">
 							👋 I’m Ryan
 						</Heading>
 					</Center>
@@ -25,7 +29,8 @@ const Home: NextPage = () => {
 						<Heading
 							as="h2"
 							color="white"
-							fontSize="4xl"
+							fontSize={{ base: "3xl", md: "4xl" }}
+							textAlign="center"
 							css={css`font-variant: small-caps; letter-spacing: 2px;`}>
 							a full stack developer
 						</Heading>
@@ -34,7 +39,8 @@ const Home: NextPage = () => {
 						<Heading
 							as="h3"
 							color="white"
-							fontSize="4xl"
+							fontSize={{ base: "3xl", md: "4xl" }}
+							textAlign="center"
 							css={css`font-variant: small-caps; letter-spacing: 2px;`}>
 							with a passion for computer vision
 						</Heading>

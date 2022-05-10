@@ -26,7 +26,9 @@ const NavBar = () => {
 			/>
 			<MenuButton onToggle={onToggle} isOpen={isOpen} />
 			<MenuLinks isOpen={isOpen}>
-				<MenuItem to="/blog">Blog</MenuItem>
+				<MenuItem to="https://blog.devryan.io/" external>
+					Blog
+				</MenuItem>
 				<MenuItem to="/resume">Resume</MenuItem>
 				<MenuItem to="/projects">Projects</MenuItem>
 				<MenuItem to="/contact">Contact</MenuItem>
@@ -45,7 +47,6 @@ const NavBarContainer: React.FC<Children> = ({ children }) => (
 		h="4.3rem"
 		bg="background"
 		p={2}
-		pr={5}
 		color="white">
 		{children}
 	</Flex>
