@@ -6,7 +6,6 @@ export default function Document() {
 		<Html>
 			<Head>
 				{/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-				<title>Portfolio | Dev Ryan</title>
 				<meta
 					name="description"
 					content="Dev Ryan, a full stack developer. A showcase of skills and projects such as the highlight-inator."
