@@ -15,7 +15,7 @@ const Resume: NextPage = () => {
 									width: 100%;
 									height: 95%;
 								`}
-						src="https://drive.google.com/file/d/1Ji0Jx58o1xqufweGqFM6Kvwytp3LNbFH/view"
+						src="https://drive.google.com/file/d/1Ji0Jx58o1xqufweGqFM6Kvwytp3LNbFH/preview"
 						allow="autoplay"
 					/>
 				</Box>
